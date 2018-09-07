@@ -59,7 +59,80 @@ body>header>h1>span {
 }
 
 /* Navigation Styles */
+/* I set up the spacing and the color and background color of hyperlinks within the mainLinks id nav tag for all the different states of a hyperlink.*/
+nav#mainLinks a {
+    padding: 5px 0px 5px 0px;
+}
+
+nav#mainLinks a:link,
+nav#mainLinks a:visited {
+    color: white;
+}
+
+nav#mainLinks a:hover,
+nav#mainLinks a:active {
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
 /* Outline Styles */
+/* I added color and font size to the outline id nav. I changed the alignment of h1 in the outline id nav and made the first ordered list have a different line height, margin size, and made it have the list style height of uppercase roman numerals. For orderlist inside of orderlist inside of the nav with the id of outline i made the list style type upper case letters. I also changed the colors of all of the different states of anchor tags. */
+nav#outline {
+    color: rgb(51, 51, 51);
+    font-size: .8em;
+}
+
+nav#outline h1 {
+    text-align: center;
+}
+
+nav#outline>ol {
+    line-height: 2em;
+    margin: 0px 5px 0px 5px;
+    list-style-type: upper-roman;
+}
+
+nav#outline>ol>ol {
+    list-style-type: upper-alpha
+}
+
+nav#outline a:link,
+nav#outline a:visited {
+    color: rgb(101, 101, 101);
+}
+
+nav#outline a:hover,
+nav#outline a:active {
+    color: rgb(97, 97, 211);
+}
+
 /* Section Styles */
+/* I changed the color of the section and the h1 in the header I changed the text size and the padding. */
+section {
+    background-color: rgb(220, 220, 220);
+}
+
+section header h1 {
+    font-size: 2.2em;
+    padding: 0px 0px 0px 10px;
+}
+
 /* Article Styles */
+/* I changed the font size of the h2 tag in the article and the first letter of the first paragraph useing psuedo classes and elements. At first I frogot that first of type was a psuedo class and that was messing up my code but with a little help I discovered what i was doing wrong. */
+article h2 {
+    font-size: 1.4em;
+}
+
+article p:first-of-type::first-letter {
+    font-size: 2em;
+}
+
 /* Aside Styles */
+aside {
+    font-size: .9em;
+}
+
+aside h1 {
+    font-size: 1.4em;
+    text-align: center;
+}
